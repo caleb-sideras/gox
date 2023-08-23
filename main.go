@@ -431,7 +431,7 @@ func generateCode(imports utils.StringSet, routes []string, renderCustomFunction
 			`
 	log.Println(code)
 
-	err := ioutil.WriteFile("../gox/generated.go", []byte(code), 0644)
+	err := ioutil.WriteFile("generated.go", []byte(code), 0644)
 	if err != nil {
 		return err
 	}
